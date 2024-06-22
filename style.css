@@ -150,6 +150,7 @@ header .two .profile {
   row-gap: 50px;
   background-color: var(--orange-red);
   padding-left: 20px;
+  padding-right: 10px;
 }
 
 .sidebar .first {
@@ -192,13 +193,13 @@ header .two .profile {
 
 .articles > div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
   justify-items: center;
 }
 
 .articles article {
-  width: 400px;
+  width: 380px;
   height: 200px;
   font-size: 1.05rem;
   background-color: var(--dark-yellow);

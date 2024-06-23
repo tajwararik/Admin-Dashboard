@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 *,
 *::before,
@@ -271,4 +271,51 @@ header .two .profile {
 
 .trending article div p:first-of-type {
   font-weight: var(--fw-bold);
+}
+
+@media (max-width: 1380px) {
+  body {
+    grid-template-columns: repeat(5, auto) 300px;
+  }
+
+  .articles > div {
+    gap: 0;
+    justify-items: start;
+  }
+
+  .articles article {
+    width: auto;
+    margin: 5px 10px;
+  }
+}
+
+@media (max-width: 1080px) {
+  header .one {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+  }
+
+  header .two {
+    display: block;
+    margin: 0 auto;
+  }
+
+  header .two .profile {
+    display: none;
+  }
+
+  .two .links {
+    padding-right: 0;
+  }
+
+  .two .links ul {
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    column-gap: 20px;
+  }
+
+  .links ul a {
+    font-size: 0.85rem;
+  }
 }
